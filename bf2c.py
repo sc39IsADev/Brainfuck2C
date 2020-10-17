@@ -20,10 +20,6 @@ mapping = {
 }
 output_code = code_start
 for i in list(brainfuck_code):
-	if i == "[":
-		indent = 2
-	if i == "]":
-		indent = 1
 	output_code = output_code + mapping[i]
 output_code = output_code + 'printf("\\n");}'
 output_file = open(sys.argv[1].replace('.bf', '.c'), "w")

@@ -1,4 +1,4 @@
-#bf2c - A BrainFuck to C compiler
+# bf2c - A BrainFuck to C compiler
 import sys
 import os
 if not ".bf" in sys.argv[1]:
